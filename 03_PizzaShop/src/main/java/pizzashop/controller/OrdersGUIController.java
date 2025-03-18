@@ -62,7 +62,9 @@ public class OrdersGUIController {
     private Calendar now = Calendar.getInstance();
     private static double totalAmount;
 
-    public OrdersGUIController(){ }
+    public OrdersGUIController(){
+        //empty constructor
+    }
 
     public void setService(PizzaService service, int tableNumber){
         this.service=service;
