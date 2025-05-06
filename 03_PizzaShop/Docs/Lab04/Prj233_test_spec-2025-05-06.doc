@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testspec Proiect233 - hsir3344_IntT</title>
+<link type="text/css" rel="stylesheet" href="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width= height= src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Proiect233<br/>Test Suite: Proiect233 - hsir3344_IntT</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 06/05/2025</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.hsir3344_IntT</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc26303">Prj233-121: Step1</a></p><p style="padding-left: 45px;"><a href="#toc_tc26305">Prj233-122: Step2</a></p><p style="padding-left: 45px;"><a href="#toc_tc26307">Prj233-123: Step3</a></p></div><h1 class="doclevel" >Scope</h1>
+<div class="txtlevel"><p>Proiect de testare pentru studentii din grupa 233.</p></div>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1.Test Suite : hsir3344_IntT</h1>
+<div><p>Lab04: Niveluri de testare</p>
+</div><a name="toc_tc26303"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case Prj233-121: Step1&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">hsir3344</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Se testează clasele Payment, PaymentRepository și PizzaService utiliz&acirc;nd teste unitare și mock-uri pentru a valida funcționalitatea de bază.</p>
+
+<ol>
+	<li>
+	<p>Se verifică dacă metoda getTableNumber() returnează corect numărul mesei.</p>
+	</li>
+	<li>
+	<p>Se testează modificarea numărului mesei folosind setTableNumber().</p>
+	</li>
+	<li>
+	<p>Se verifică funcționalitatea metodei getAll() din PaymentRepository, care trebuie să returneze o listă goală inițial.</p>
+	</li>
+	<li>
+	<p>Se adaugă un obiect Payment și se validează dacă este salvat corect &icirc;n repository.</p>
+	</li>
+	<li>
+	<p>Se creează o instanță PizzaService folosind un mock pentru PaymentRepository.</p>
+	</li>
+	<li>
+	<p>Se testează metoda getPayments() pentru a confirma că lista de plăți este obținută corect din repository.</p>
+	</li>
+	<li>
+	<p>Se verifică metoda addPayment(), inclusiv dacă adăugarea este făcută corect și dacă lista de plăți conține noua intrare.</p>
+	</li>
+</ol>
+
+<p>Rezultate așteptate:</p>
+
+<ul>
+	<li>
+	<p>getTableNumber() returnează valoarea corectă.</p>
+	</li>
+	<li>
+	<p>setTableNumber() modifică corect atributul.</p>
+	</li>
+	<li>
+	<p>getAll() returnează o listă inițială goală.</p>
+	</li>
+	<li>
+	<p>add() adaugă corect un obiect Payment, care poate fi regăsit ulterior.</p>
+	</li>
+	<li>
+	<p>getPayments() returnează lista simulată.</p>
+	</li>
+	<li>
+	<p>addPayment() adaugă corect o plată și o salvează prin repository.</p>
+	</li>
+</ul>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><ul>
+	<li>
+	<p>Proiectul trebuie să fie compilat cu succes.</p>
+	</li>
+	<li>
+	<p>Bibliotecile JUnit 5 și Mockito trebuie să fie corect configurate &icirc;n fișierul pom.xml.</p>
+	</li>
+	<li>
+	<p>Clasele Payment, PaymentRepository, PizzaService și PaymentType trebuie să fie implementate și disponibile.</p>
+	</li>
+	<li>
+	<p>Anotările @Mock, @InjectMocks și @ExtendWith(MockitoExtension.class) trebuie să fie utilizate corect &icirc;n clasele de testare.</p>
+	</li>
+</ul>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.service.PaymentTestStep1</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.service.PaymentTestStep1#getTableNumber</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">hsir3344_F02:  Afiseaza totalul incasarilor [Version : 1]<br />hsir3344_F01:  Adaugare payment [Version : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc26305"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case Prj233-122: Step2&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">hsir3344</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Clasa testează integrarea dintre PizzaService (modulul S) și PaymentRepository (modulul R) folosind o strategie top-down.</p>
+
+<p>Sunt verificate metodele getPayments() și addPayment() pentru a testa interacțiunea dintre serviciu și repository.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><ul>
+	<li>
+	<p>Clasa PizzaService trebuie să fie implementată și să accepte ca parametru un obiect de tip PaymentRepository.</p>
+	</li>
+	<li>
+	<p>Clasa PaymentRepository trebuie să fie funcțională și să permită operații de tip add() și getAll().</p>
+	</li>
+	<li>
+	<p>Clasa PaymentValidator este prezentă, dar nu este testată direct &icirc;n aceste metode.</p>
+	</li>
+</ul>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.service.PizzaServiceTestStep2</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.service.PizzaServiceTestStep2#addPayment</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">hsir3344_F01:  Adaugare payment [Version : 1]<br />hsir3344_F02:  Afiseaza totalul incasarilor [Version : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc26307"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case Prj233-123: Step3&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">hsir3344</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Această clasă testează integrarea completă a modulelor S (PizzaService), R (PaymentRepository) și E (Payment) &icirc;ntr-un mod top-down.</p>
+
+<p>Se validează corecta propagare a datelor și funcționarea end-to-end a metodelor addPayment() și getPayments(), folosind implementările reale ale tuturor componentelor.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><ul>
+	<li>
+	<p>Clasele PizzaService, PaymentRepository și Payment trebuie să fie complet implementate și funcționale.</p>
+	</li>
+	<li>
+	<p>PizzaService trebuie să interacționeze corect cu PaymentRepository pentru a adăuga și a returna plăți.</p>
+	</li>
+	<li>
+	<p>PaymentValidator trebuie să fie implementat și acceptat de constructorul PizzaService, deși nu este testat explicit.</p>
+	</li>
+	<li>
+	<p>Clasa Payment trebuie să implementeze corect egalitatea (equals) pentru ca assertEquals(payment, result.get(0)) să funcționeze.</p>
+	</li>
+</ul>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.service.PizzaServiceTestStep3</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.service.PizzaServiceTestStep3#addPayment</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">hsir3344_F01:  Adaugare payment [Version : 1]<br />hsir3344_F02:  Afiseaza totalul incasarilor [Version : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+
+</body>
+</html>

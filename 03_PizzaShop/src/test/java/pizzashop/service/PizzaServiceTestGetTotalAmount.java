@@ -1,6 +1,7 @@
 package pizzashop.service;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 import pizzashop.model.Payment;
 import pizzashop.model.PaymentType;
 
@@ -9,6 +10,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class PizzaServiceTestGetTotalAmount {
 
     private PizzaService service = new PizzaService(null, null, null);
