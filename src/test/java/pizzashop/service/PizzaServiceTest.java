@@ -19,10 +19,11 @@ class PizzaServiceTest {
     private PaymentValidator validator;
 
     public PizzaServiceTest() {
-        MenuRepository repoMenu = new MenuRepository();
-        repository = new PaymentRepository();
-        validator = new PaymentValidator();
-        service = new PizzaService(repoMenu, repository, validator);
+        super();
+        // MenuRepository repoMenu = new MenuRepository();
+        // repository = new PaymentRepository();
+        // validator = new PaymentValidator();
+        // service = new PizzaService(repoMenu, repository, validator);
     }
 
     @BeforeEach
