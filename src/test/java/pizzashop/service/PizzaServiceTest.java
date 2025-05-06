@@ -10,6 +10,8 @@ import pizzashop.validator.PaymentValidator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class PizzaServiceTest {
 
     private PizzaService service;
