@@ -19,7 +19,7 @@ import static org.mockito.Mockito.when;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @ExtendWith(MockitoExtension.class)
-class PizzaServiceTestStep2 {
+public class PizzaServiceTestStep2 {
 
     PaymentRepository payRepo;
     PizzaService service;
