@@ -1,6 +1,8 @@
 package pizzashop.service;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.OS;
 import pizzashop.model.Payment;
 import pizzashop.model.PaymentType;
 
