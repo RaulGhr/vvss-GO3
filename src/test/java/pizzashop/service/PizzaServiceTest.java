@@ -18,13 +18,6 @@ class PizzaServiceTest {
     private PaymentRepository repository;
     private PaymentValidator validator;
 
-    public PizzaServiceTest() {
-        super();
-        // MenuRepository repoMenu = new MenuRepository();
-        // repository = new PaymentRepository();
-        // validator = new PaymentValidator();
-        // service = new PizzaService(repoMenu, repository, validator);
-    }
 
     @BeforeEach
     void setUp() {
