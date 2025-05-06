@@ -103,7 +103,7 @@
         <version>2.22.1</version>
         <configuration>
           <!--                <failIfNoTests>false</failIfNoTests>-->
-          <argLine>--add-opens pizzashop.service/pizzashop.service=ALL-UNNAMED</argLine>
+          <argLine>--add-opens pizzashop/pizzashop.service=ALL-UNNAMED</argLine>
 
         </configuration>
       </plugin>
