@@ -18,12 +18,19 @@ class PizzaServiceTest {
     private PaymentRepository repository;
     private PaymentValidator validator;
 
+    public PizzaServiceTest() {
+        MenuRepository repoMenu = new MenuRepository();
+        repository = new PaymentRepository();
+        validator = new PaymentValidator();
+        service = new PizzaService(repoMenu, repository, validator);
+    }
+
     @BeforeEach
     void setUp() {
         MenuRepository repoMenu = new MenuRepository();
-        this.repository = new PaymentRepository();
-        this.validator = new PaymentValidator();
-        this.service = new PizzaService(repoMenu, repository, validator);
+        repository = new PaymentRepository();
+        validator = new PaymentValidator();
+        service = new PizzaService(repoMenu, repository, validator);
 
         repository.getAll().clear();
         repository.writeAll();
