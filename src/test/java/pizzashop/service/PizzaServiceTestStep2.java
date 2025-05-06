@@ -45,7 +45,7 @@ class PizzaServiceTestStep2 {
     }
 
     @Test
-    void addPayment_withMockedPayment() {
+    void addPayment() {
         Payment mockPayment = mock(Payment.class);
 
         payRepo.add(mockPayment);
