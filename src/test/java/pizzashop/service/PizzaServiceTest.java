@@ -16,7 +16,7 @@ class PizzaServiceTest {
     private PaymentRepository repository;
     private PaymentValidator validator;
 
-    @BeforeEach
+    @BeforeAll static
     void setUp() {
         MenuRepository repoMenu = new MenuRepository();
         this.repository = new PaymentRepository();
