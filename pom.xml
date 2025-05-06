@@ -127,10 +127,12 @@
         <version>2.22.1</version>
         <configuration>
           <!--                <failIfNoTests>false</failIfNoTests>-->
-          <argLine>--add-opens pizzashop/pizzashop.service=ALL-UNNAMED</argLine>
-          <argLine>--add-opens pizzashop/pizzashop.model=ALL-UNNAMED</argLine>
-          <argLine>--add-opens pizzashop/pizzashop.repository=ALL-UNNAMED</argLine>
-          <argLine>--add-opens pizzashop/pizzashop.validator=ALL-UNNAMED</argLine>
+          <argLine>
+            --add-opens pizzashop/pizzashop.service=ALL-UNNAMED
+            --add-opens pizzashop/pizzashop.model=ALL-UNNAMED
+            --add-opens pizzashop/pizzashop.repository=ALL-UNNAMED
+            --add-opens pizzashop/pizzashop.validator=ALL-UNNAMED
+          </argLine>
         </configuration>
       </plugin>
       <plugin>
